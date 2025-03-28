@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1{
+            background-color:aliceblue;
+        }
+        #p1::first-letter{
+                color: red;
+                font-size: 30px;
+        }
+        #p1::first-line{
+        
+            color:rgb(128, 8, 240);
+        }
+        #p2::after
+    {
+         content: "😊😉";
+    }
+    #p1::selection{
+        background-color: palevioletred;
+    }
+    #p2::before{
+        content: "🤣😂😂🤣";
+    }
+    /* USED TO  ODER LIST AND UL*/
+    ::marker{
+        color: rgb(242, 7, 39);
+        font-size:20px ;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>pseudo element</h1>
+    <hr>
+    <p>it is used to add style to the  specific part of an element based on its state</p>
+    <p>it indicates with :: (double colon)</p>
+
+    <hr>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi ullam quia eius dignissimos quos provident praesentium commodi modi, ut hic deleniti illo quaerat non molestias quo, magnam architecto! Laborum illum error praesentium et neque voluptas perferendis quo autem exercitationem, optio cumque veritatis amet suscipit iusto ratione delectus! Vel, illo consectetur eius possimus culpa itaque nesciunt cum pariatur temporibus, molestiae veniam quisquam obcaecati similique dignissimos quia quos cupiditate deleniti eum delectus, nostrum excepturi unde magnam molestias. Non quas perferendis, vitae numquam labore corrupti sapiente ut vero est adipisci! Eveniet, nihil error. Numquam iste velit, error dolore quisquam corrupti dicta iusto.</p>
+    <p id="p2">This is a content </p>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+</body>
+</html>
